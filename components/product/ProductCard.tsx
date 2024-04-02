@@ -41,7 +41,7 @@ export interface Layout {
   };
 }
 
-interface Props {
+export interface Props {
   product: Product;
   /** Preload card image */
   preload?: boolean;
@@ -163,14 +163,12 @@ function ProductCard({
           >
             {platform === "vtex" && (
               <WishlistButtonVtex
-                productGroupID={productGroupID}
-                productID={productID}
+                product={product}
               />
             )}
             {platform === "wake" && (
               <WishlistButtonWake
-                productGroupID={productGroupID}
-                productID={productID}
+                product={product}
               />
             )}
           </div>
@@ -193,7 +191,7 @@ function ProductCard({
           aria-label="view product"
           class="grid grid-cols-1 grid-rows-1 w-full"
         >
-          <Image
+          <img
             src={front.url!}
             alt={front.alternateName}
             width={WIDTH}
@@ -204,13 +202,12 @@ function ProductCard({
                 : ""
             }`}
             sizes="(max-width: 640px) 50vw, 20vw"
-            preload={preload}
             loading={preload ? "eager" : "lazy"}
             decoding="async"
           />
           {(!l?.onMouseOver?.image ||
             l?.onMouseOver?.image == "Change image") && (
-            <Image
+            <img
               src={back?.url ?? front.url!}
               alt={back?.alternateName ?? front.alternateName}
               width={WIDTH}

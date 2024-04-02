@@ -101,8 +101,7 @@ const manifest = {
     "deco-sites/campslow/sections/Miscellaneous/CookieConsent.tsx": $$$$$$32,
     "deco-sites/campslow/sections/Miscellaneous/Slide.tsx": $$$$$$33,
     "deco-sites/campslow/sections/Newsletter/Newsletter.tsx": $$$$$$34,
-    "deco-sites/campslow/sections/Product/ImageGalleryFrontBack.tsx":
-      $$$$$$35,
+    "deco-sites/campslow/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$35,
     "deco-sites/campslow/sections/Product/NotFound.tsx": $$$$$$36,
     "deco-sites/campslow/sections/Product/NotFoundChallenge.tsx": $$$$$$37,
     "deco-sites/campslow/sections/Product/ProductDetails.tsx": $$$$$$38,

@@ -18,6 +18,17 @@ export default defineApp(async (_req, ctx) => {
 
       {/* Include Icons and manifest */}
       <Head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins"
+        />
+        <style>
+          {`body {
+          font-family: 'Poppins', serif;
+          font-size: 48px;
+        }`}
+        </style>
+
         {/* Enable View Transitions API */}
         <meta name="view-transition" content="same-origin" />
 

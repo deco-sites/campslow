@@ -1,7 +1,7 @@
 import { SendEventOnView } from "../../components/Analytics.tsx";
 import ProductCard, {
   Layout as cardLayout,
-} from "../../components/product/ProductCard.tsx";
+} from "../../islands/ProductCard.tsx";
 import Icon from "../../components/ui/Icon.tsx";
 import Header from "../../components/ui/SectionHeader.tsx";
 import Slider from "../../components/ui/Slider.tsx";
